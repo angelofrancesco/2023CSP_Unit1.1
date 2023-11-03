@@ -25,10 +25,17 @@ for line in range(6):
         painter.forward(50)
         painter.right(90)
 #Draw Flower
-painter.right(30)
 painter.up()
-painter.goto(0, 0)
+painter.goto(15, 10)
 painter.down()
+for line in range (3):
+    for line in range(25):
+        painter.right(2)
+        painter.forward(4)
+    painter.right(120)
+    for line in range(25):
+        painter.right(3)
+        painter.forward(4.3)
 
 wn = trtl.Screen()
 wn.mainloop()
