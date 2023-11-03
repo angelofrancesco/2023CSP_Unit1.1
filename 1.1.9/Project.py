@@ -25,6 +25,7 @@ for line in range(6):
         painter.forward(50)
         painter.right(90)
 #Draw Flower
+painter.pencolor("pink")
 painter.up()
 painter.goto(15, 10)
 painter.down()
