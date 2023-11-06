@@ -1,3 +1,17 @@
+#Pseudocode
+'''Import turtle
+    Draw pattern
+        Draw a square at an angle
+        Repeat code 6 times each having a different angle
+    Draw flower
+        Make painter pink
+        Draw oval
+        Every oval drawn next to each other moving in a circle
+            Repeat code 6 times'''
+
+
+
+#Drawing Flower Pattern
 import turtle as trtl
 painter = trtl.Turtle()
 painter.speed(50)
@@ -6,7 +20,7 @@ painter.up()
 painter.goto(-150, 50)
 painter.down()
 painter.left(30)
-#Draw first layer
+#The pattern
 for line in range(6):
     for line in range(4):
         painter.forward(200)
@@ -24,8 +38,9 @@ for line in range(6):
         painter.left(60)
         painter.forward(50)
         painter.right(90)
-#Draw Flower
+#The Flower
 painter.pencolor("pink")
+painter.width(5)
 painter.up()
 painter.goto(15, 10)
 painter.down()
@@ -36,6 +51,18 @@ for line in range (3):
     painter.right(120)
     for line in range(25):
         painter.right(3)
+        painter.forward(4.3)
+#Flower 2nd part
+painter.up()
+painter.goto(12, 14)
+painter.down()
+for line in range (3):
+    for line in range(25):
+        painter.left(2)
+        painter.forward(4)
+    painter.left(120)
+    for line in range(25):
+        painter.left(3)
         painter.forward(4.3)
 
 wn = trtl.Screen()
